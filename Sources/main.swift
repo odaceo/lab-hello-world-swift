@@ -1,6 +1,6 @@
-if Process.arguments.count != 2 { 
+if CommandLine.arguments.count != 2 { 
 	print("Usage: hello NAME") 
 }
 else { 
-	sayHello(Process.arguments[1]) 
+	print(sayHello(name: CommandLine.arguments[1])) 
 }

@@ -1,6 +1,7 @@
-# Lab | Hello World Swift Application on Linux
+# Lab :: Hello World :: Swift Application
 
-[![License](https://img.shields.io/github/license/odaceo/lab-hello-world-swift-linux.svg)](LICENSE)
+[![License](https://img.shields.io/github/license/odaceo/lab-hello-world-swift.svg)](LICENSE)
+[![Build Status](https://travis-ci.org/odaceo/lab-hello-world-swift.svg)](https://travis-ci.org/odaceo/lab-hello-world-swift)
 
 ## Description
 
@@ -24,7 +25,7 @@ cd /vagrant
 The build command creates a standalone binary file.
 
 ``` shell
-swift build
+swift build --configuration release
 ```
 
 ## Running the application
@@ -32,28 +33,16 @@ swift build
 To launch the application use the following command:
 
 ``` shell
-.build/debug/Hello World
+.build/release/hello Odaceo
 ```
-
-## Releasing the application
-
-Step-by-step instructions for releasing the application:
-
-1. Start a new release
-
-        git flow release start x.y.z
-
-1. Finish the release
-
-        git flow release finish -m "Release x.y.z" x.y.z
 
 ## Reporting Issues
 
-Issues can be reported at [https://github.com/odaceo/lab-hello-world-swift-linux/issues](https://github.com/odaceo/lab-hello-world-swift-linux/issues)
+Issues can be reported at [https://github.com/odaceo/lab-hello-world-swift/issues](https://github.com/odaceo/lab-hello-world-swift/issues)
 
 ## Source code
 
-The source code is available at [https://github.com/odaceo/lab-hello-world-swift-linux](https://github.com/odaceo/lab-hello-world-swift-linux)
+The source code is available at [https://github.com/odaceo/lab-hello-world-swift](https://github.com/odaceo/lab-hello-world-swift)
 
 ## License
 
