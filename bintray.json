@@ -1,0 +1,38 @@
+{
+    "package": {
+        "name": "lab-hello-world-swift",
+        "repo": "generic",
+        "subject": "odaceo",
+        "desc": "A simple Swift application on Linux.",
+        "website_url": "https://github.com/odaceo/lab-hello-world-swift",
+        "issue_tracker_url": "https://github.com/odaceo/lab-hello-world-swift/issues",
+        "vcs_url": "https://github.com/odaceo/lab-hello-world-swift.git",
+        "licenses": ["Apache-2.0"],
+        "public_download_numbers": true,
+        "public_stats": true
+    },
+
+    "version": {
+        "name": "master",
+        "gpgSign": false
+    },
+
+    "files": [
+        {
+            "includePattern": ".build/linux/release/hello", 
+            "uploadPattern": "/lab-hello-world-swift/master/linux-amd64-dynamic/hello",
+            "matrixParams": {
+                "override": 1 
+            }
+        },
+        {
+            "includePattern": ".build/osx/release/hello", 
+            "uploadPattern": "/lab-hello-world-swift/master/darwin-amd64-dynamic/hello",
+            "matrixParams": {
+                "override": 1 
+            }
+        }
+    ],
+
+    "publish": true
+}

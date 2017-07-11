@@ -13,5 +13,11 @@ install:
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then eval "$(curl -sL https://github.com/odaceo/script-ubuntu-swiftenv/raw/master/install.sh)" ; fi
 
 script:
-  - swift build --configuration release
-  - .build/release/hello Odaceo
+  - swift build --configuration release --build-path ./.build/$TRAVIS_OS_NAME
+  - .build/$TRAVIS_OS_NAME/release/hello Odaceo
+
+deploy:
+  provider: bintray
+  file: bintray.json
+  user: ${BINTRAY_USER}
+  key: ${BINTRAY_PASS}
